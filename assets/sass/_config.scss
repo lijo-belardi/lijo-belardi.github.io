@@ -1,5 +1,6 @@
 // Font
 $font-stack: 'Reem Kufi', sans-serif;
+$font-size-mobile: 1rem;
 
 // Color
 $primary-color: #393441;
@@ -8,6 +9,9 @@ $tertiary-color: #FBBA83;
 $linear-gradient-color-up: linear-gradient(to bottom, #393441, #36313e, #342f3b, #312c39, #2f2a36);
 $linear-gradient-color-bottom: linear-gradient(to top, #393441, #36313e, #342f3b, #312c39, #2f2a36);
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
     color: $secondary-color;
 }
+
+// Transition
+$transition-time: 300ms;

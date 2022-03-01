@@ -18,10 +18,37 @@ body {
     font-family: $font-stack;
     background-color: $primary-color;
     
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.10rem;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+/* ------- Header ------- */
+header {
+    background-color: #2f2a36;
+}
+
+/* ------- Navbar ------- */
+nav {
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        a {
+            font-size: $font-size-mobile;
+            transition: $transition-time;
+        }
+
+        a:hover {
+            color: $tertiary-color;
+        }
+    }
 }
 
 /* ------- Footer ------- */
