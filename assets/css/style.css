@@ -72,6 +72,16 @@ nav ul a > span:hover:after {
   transform-origin: bottom left;
 }
 
+/* ------- Welcome section ------- */
+.welcome-name {
+  color: #FBBA83;
+  font-size: 2rem;
+}
+.welcome-line {
+  height: 5px;
+  background-color: #FBBA83;
+}
+
 /* ------- Footer ------- */
 footer {
   margin-top: auto;
@@ -100,6 +110,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 }
 @media (min-width: 1400px) {
+  /* Navbar */
   nav ul a > span {
     font-size: 1.2rem;
   }

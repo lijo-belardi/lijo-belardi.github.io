@@ -77,6 +77,21 @@ nav {
     }
 }
 
+/* ------- Welcome section ------- */
+.welcome {
+    
+    &-name {
+        color: $tertiary-color;
+        font-size: $font-size-name-sm;
+    }
+
+    &-line {
+        height: 5px;
+        background-color: $tertiary-color;
+    }
+}
+
+
 /* ------- Footer ------- */
 footer {
     margin-top: auto;
