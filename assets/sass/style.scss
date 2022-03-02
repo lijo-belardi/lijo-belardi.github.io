@@ -18,7 +18,7 @@ body {
     font-family: $font-stack;
     background-color: $primary-color;
     
-    letter-spacing: 0.10rem;
+    letter-spacing: $letter-spacing-default;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -39,6 +39,10 @@ nav {
         flex-basis: 100%;
         justify-content: space-between;
         margin-top: 1rem;
+
+        a:last-of-type {
+            margin-right: auto;
+        }
 
         a {
             font-size: $font-size-mobile;
