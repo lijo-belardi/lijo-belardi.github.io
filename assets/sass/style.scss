@@ -1,4 +1,4 @@
-@use '../sass/partials' as *;
+@use "../sass/partials" as *;
 
 *,
 *::before,
@@ -19,8 +19,8 @@ html {
 body {
     font-family: $font-stack;
     background-color: $primary-color;
-
     letter-spacing: $letter-spacing-default;
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -42,10 +42,8 @@ nav {
         margin-top: 1rem;
         padding-right: 2rem;
 
-        a:last-of-type {
-            margin-right: auto;
-        }
         
+
         a > span {
             color: $secondary-color;
             display: inline-block;
@@ -80,28 +78,36 @@ nav {
 
 /* ------- Welcome section ------- */
 .welcome {
+    margin-top: 2.5rem;
 
-    &-name {
-        color: $tertiary-color;
-        font-size: $font-size-name-sm;
-    }
-
-    &-line {
-        height: 5px;
-        background-color: $tertiary-color;
-    }
-
-    img {
-        max-width: 100%;
+    .d-flex {
+        align-items: center;
+        justify-content: center;
+        
+        .welcome-name {
+            color: $tertiary-color;
+            font-size: $font-size-name-sm;
+        }
+        .welcome-line {
+            background-color: $tertiary-color;
+            height: $line-height-welcome-sm;
+        }
+        .welcome-carousel {
+            font-size: $font-size-words-sm;
+        }
+        .welcome-box-img {
+            margin-top: 1rem;
+        }
+        img {
+            display: block;
+            max-width: $max-width-welcome-img-sm;
+        }
     }
 }
-
 
 /* ------- Footer ------- */
 footer {
     margin-top: auto;
 }
-
-
 
 @import "../sass/partials/mediaquery";

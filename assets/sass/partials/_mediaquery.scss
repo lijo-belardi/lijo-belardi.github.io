@@ -1,13 +1,23 @@
 @use "fonts" as *;
+@use "utilities" as *;
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@media (min-width: 0px) {
+    .welcome {
+        .d-flex {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
 // Small (sm)
 @media (min-width: 576px) {
    
 }
 // Medium (md)
 @media (min-width: 768px) {
-    // Navbar
+    /* Navbar */
     nav {
         ul {
             a > span {
@@ -15,6 +25,10 @@
             }
         }
     }
+
+    /* Welcome section */
+
+  
 }
 // Large (lg)
 @media (min-width: 992px) {
