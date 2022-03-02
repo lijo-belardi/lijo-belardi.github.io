@@ -1,7 +1,7 @@
 var words = ['Sviluppatore Full Stack', 'Giornalista', 'Sociologo'];
 var counter = 0;
-var words = document.getElementById('carousel-words');
-setInterval(updated_carousel_words, 1000);
+var word = document.getElementById('carousel-words');
+setInterval(updated_carousel_words, 2000);
 function updated_carousel_words(){
     word.innerHTML = words[counter];
     counter++;
