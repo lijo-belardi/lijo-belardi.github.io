@@ -1,0 +1,11 @@
+@use "colors" as *;
+
+// Font
+$font-stack: 'Reem Kufi', sans-serif;
+$font-size-mobile: 1rem;
+$letter-spacing-default: 0.10rem;
+
+// Setting text's color
+h1, h2, h3, h4, h5, h6, p, a {
+    color: $secondary-color;
+}
