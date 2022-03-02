@@ -41,9 +41,7 @@ nav ul {
   flex-basis: 100%;
   justify-content: space-between;
   margin-top: 1rem;
-}
-nav ul a:last-of-type {
-  margin-right: auto;
+  padding-right: 2rem;
 }
 nav ul a > span {
   color: #FAF8FF;
