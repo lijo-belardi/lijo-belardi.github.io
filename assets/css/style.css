@@ -81,6 +81,9 @@ nav ul a > span:hover:after {
   height: 5px;
   background-color: #FBBA83;
 }
+.welcome img {
+  max-width: 100%;
+}
 
 /* ------- Footer ------- */
 footer {
