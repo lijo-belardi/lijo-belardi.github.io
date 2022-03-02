@@ -1,8 +1,16 @@
 @use "colors" as *;
 
-// Font
+// Font - type
 $font-stack: 'Reem Kufi', sans-serif;
-$font-size-mobile: 1rem;
+
+// Font - size
+$font-size-sm: 1rem;
+$font-size-md: 1.05rem;
+$font-size-lg: 1.10rem;
+$font-size-xl: 1.15rem;
+$font-size-xxl: 1.20rem;
+
+// Letter's space
 $letter-spacing-default: 0.10rem;
 
 // Setting text's color
