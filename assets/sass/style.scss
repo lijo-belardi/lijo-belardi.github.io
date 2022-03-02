@@ -1,6 +1,8 @@
-@import 'config';
+@import "config";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +19,7 @@ html {
 body {
     font-family: $font-stack;
     background-color: $primary-color;
-    
+
     letter-spacing: $letter-spacing-default;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,6 @@ header {
 
 /* ------- Navbar ------- */
 nav {
-    
     ul {
         list-style-type: none;
         display: flex;
@@ -43,14 +44,35 @@ nav {
         a:last-of-type {
             margin-right: auto;
         }
-
-        a {
+        
+        a > span {
+            color: $secondary-color;
+            display: inline-block;
             font-size: $font-size-mobile;
             transition: $transition-time;
+            position: relative;
         }
 
-        a:hover {
+        a > span:hover {
             color: $tertiary-color;
+        }
+
+        a > span:after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 0.125rem;
+            bottom: 0;
+            left: 0;
+            background-color: $tertiary-color;
+            transform-origin: bottom right;
+            transition: transform $transition-time ease-out;
+        }
+
+        a > span:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
     }
 }

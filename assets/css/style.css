@@ -2,7 +2,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,12 +44,31 @@ nav ul {
 nav ul a:last-of-type {
   margin-right: auto;
 }
-nav ul a {
+nav ul a > span {
+  color: #FAF8FF;
+  display: inline-block;
   font-size: 1rem;
   transition: 300ms;
+  position: relative;
 }
-nav ul a:hover {
+nav ul a > span:hover {
   color: #FBBA83;
+}
+nav ul a > span:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.125rem;
+  bottom: 0;
+  left: 0;
+  background-color: #FBBA83;
+  transform-origin: bottom right;
+  transition: transform 300ms ease-out;
+}
+nav ul a > span:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ------- Footer ------- */
