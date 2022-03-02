@@ -1,9 +1,11 @@
 @use "fonts" as *;
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+// Small (sm)
 @media (min-width: 576px) {
    
 }
+// Medium (md)
 @media (min-width: 768px) {
     // Navbar
     nav {
@@ -14,6 +16,7 @@
         }
     }
 }
+// Large (lg)
 @media (min-width: 992px) {
     /* Navbar */
     nav {
@@ -24,6 +27,7 @@
         }
     }
 }
+// Extra Large (xl)
 @media (min-width: 1200px) {
     /* Navbar */
     nav {
@@ -34,6 +38,7 @@
         }
     }
 }
+// Extra extra Large (xxl)
 @media (min-width: 1400px) {
     /* Navbar */
     nav {
