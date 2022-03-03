@@ -22,7 +22,7 @@ html {
 body {
   font-family: "Reem Kufi", sans-serif;
   background-color: #393441;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
   padding: 0;
   margin: 0;
   display: flex;
@@ -110,6 +110,22 @@ header {
   max-width: 100%;
 }
 
+/* ------- About section ------- */
+.about {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.about-description {
+  text-align: justify;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+
+/* ------- Skills ------- */
 /* ------- Footer ------- */
 footer {
   margin-top: auto;
