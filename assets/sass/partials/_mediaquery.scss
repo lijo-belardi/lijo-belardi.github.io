@@ -3,12 +3,6 @@
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
 @media (min-width: 0px) {
-    .welcome {
-        .d-flex {
-            display: flex;
-            flex-direction: column;
-        }
-    }
 }
 
 // Small (sm)
@@ -27,23 +21,29 @@
 
     /* Welcome section */
     .welcome {
-        .d-flex {
-            .welcome-box-text {
-                margin-left: -5.5rem;
-            }
-            .welcome-name {
-                padding: 0rem 8.125rem;
+        height: 55vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        &-box-text {
+            height: 20rem;
+            width: 20rem;
+
+            h1 {
                 font-size: $font-size-name-md;
             }
             .welcome-line {
-                margin: 0rem 0.25rem;
+                height: $line-height-welcome-md;
             }
-            .welcome-carousel {
+            .carousel-words {
                 font-size: $font-size-words-md;
             }
-            .img {
-                padding-bottom: 2rem;
-            }
+        }
+        &-box-img {
+            height: 20rem;
+            width: 20rem;
         }
     }
 }
@@ -68,6 +68,21 @@
             }
         }
     }
+    /* Welcome - section */
+    .welcome {
+        &-box-text {
+            height: 22.5rem;
+            width: 22.5rem;
+
+            h1 {
+                font-size: $font-size-name-xl;
+            }
+        }
+        &-box-img {
+            height: 22.5rem;
+            width: 22.5rem;
+        }
+    }
 }
 // Extra extra Large (xxl)
 @media (min-width: 1400px) {
@@ -76,6 +91,29 @@
         .navbar-nav {
             .nav-link > span {
                 font-size: $font-size-nav-xxl;
+            }
+        }
+    }
+    /* Welcome section */
+    .welcome {
+        &-box-text {
+            height: 25rem;
+            width: 25rem;
+
+            h1 {
+                font-size: $font-size-name-xxl;
+            }
+            .carousel-words {
+                font-size: $font-size-words-xxl;
+            }
+        }
+        &-box-img {
+            height: 25rem;
+            width: 25rem;
+            display: flex;
+
+            img {
+                max-width: 100%;
             }
         }
     }

@@ -1,4 +1,4 @@
-var words = ['Sviluppatore Full Stack', 'Giornalista', 'Sociologo'];
+var words = ['Sviluppatore Blockchain', 'Sviluppatore Full Stack', 'Giornalista', 'Sociologo'];
 var counter = 0;
 var word = document.getElementById('carousel-words');
 setInterval(updated_carousel_words, 2000);

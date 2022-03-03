@@ -76,29 +76,38 @@ header {
 /* ------- Welcome section ------- */
 .welcome {
   margin-top: 2.5rem;
-}
-.welcome .d-flex {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.welcome .d-flex .welcome-name {
-  color: #FBBA83;
-  font-size: 2rem;
+.welcome-box-text {
+  height: 18rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.welcome .d-flex .welcome-line {
+.welcome-box-text h1 {
+  color: #FBBA83;
+  font-size: 2.9rem;
+}
+.welcome-box-text .welcome-line {
   background-color: #FBBA83;
   height: 0.313rem;
+  width: 100%;
 }
-.welcome .d-flex .welcome-carousel {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+.welcome-box-text .carousel-words {
+  font-size: 1.4rem;
 }
-.welcome .d-flex .welcome-box-img {
-  margin-top: 1rem;
+.welcome-box-img {
+  height: 18rem;
+  width: 18rem;
 }
-.welcome .d-flex img {
-  display: block;
-  max-width: 10.938rem;
+.welcome-box-img img {
+  max-width: 100%;
 }
 
 /* ------- Footer ------- */
@@ -111,34 +120,36 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
 }
 
-@media (min-width: 0px) {
-  .welcome .d-flex {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media (min-width: 768px) {
   /* Navbar */
   .navbar .navbar-nav .nav-link > span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   /* Welcome section */
-  .welcome .d-flex .welcome-box-text {
-    margin-left: -5.5rem;
+  .welcome {
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
   }
-  .welcome .d-flex .welcome-name {
-    padding: 0rem 8.125rem;
-    font-size: 2.5rem;
+  .welcome-box-text {
+    height: 20rem;
+    width: 20rem;
   }
-  .welcome .d-flex .welcome-line {
-    margin: 0rem 0.25rem;
+  .welcome-box-text h1 {
+    font-size: 3rem;
   }
-  .welcome .d-flex .welcome-carousel {
-    font-size: 1.8rem;
+  .welcome-box-text .welcome-line {
+    height: 0.626rem;
   }
-  .welcome .d-flex .img {
-    padding-bottom: 2rem;
+  .welcome-box-text .carousel-words {
+    font-size: 1.5rem;
+  }
+  .welcome-box-img {
+    height: 20rem;
+    width: 20rem;
   }
 }
 @media (min-width: 992px) {
@@ -152,11 +163,44 @@ h1, h2, h3, h4, h5, h6, p, a {
   .navbar .navbar-nav .nav-link > span {
     font-size: 1.6rem;
   }
+
+  /* Welcome - section */
+  .welcome-box-text {
+    height: 22.5rem;
+    width: 22.5rem;
+  }
+  .welcome-box-text h1 {
+    font-size: 3.5rem;
+  }
+  .welcome-box-img {
+    height: 22.5rem;
+    width: 22.5rem;
+  }
 }
 @media (min-width: 1400px) {
   /* Navbar */
   .navbar .navbar-nav .nav-link > span {
     font-size: 1.8rem;
+  }
+
+  /* Welcome section */
+  .welcome-box-text {
+    height: 25rem;
+    width: 25rem;
+  }
+  .welcome-box-text h1 {
+    font-size: 4rem;
+  }
+  .welcome-box-text .carousel-words {
+    font-size: 2rem;
+  }
+  .welcome-box-img {
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+  }
+  .welcome-box-img img {
+    max-width: 100%;
   }
 }
 

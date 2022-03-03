@@ -79,29 +79,39 @@ header {
 /* ------- Welcome section ------- */
 .welcome {
     margin-top: 2.5rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .d-flex {
+    &-box-text {
+        height: 18rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         
-        .welcome-name {
-            color: $tertiary-color;
-            font-size: $font-size-name-sm;
+        h1 {
+           color: $tertiary-color; 
+           font-size: $font-size-name-sm;
         }
         .welcome-line {
             background-color: $tertiary-color;
             height: $line-height-welcome-sm;
+            width: 100%;
         }
-        .welcome-carousel {
+        .carousel-words {
             font-size: $font-size-words-sm;
-            margin-top: 0.5rem;
         }
-        .welcome-box-img {
-            margin-top: 1rem;
-        }
+    }
+    &-box-img {
+        height: 18rem;
+        width: 18rem;
+
         img {
-            display: block;
-            max-width: $max-width-welcome-img-sm;
+            max-width: 100%;
         }
     }
 }
