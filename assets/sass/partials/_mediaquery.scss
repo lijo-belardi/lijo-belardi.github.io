@@ -17,10 +17,10 @@
 // Medium (md)
 @media (min-width: 768px) {
     /* Navbar */
-    nav {
-        ul {
-            a > span {
-                font-size: $font-size-md;
+    .navbar {
+        .navbar-nav {
+            .nav-link > span {
+                font-size: $font-size-nav-md;
             }
         }
     }
@@ -50,10 +50,10 @@
 // Large (lg)
 @media (min-width: 992px) {
     /* Navbar */
-    nav {
-        ul {
-            a > span {
-                font-size: $font-size-lg;
+    .navbar {
+        .navbar-nav {
+            .nav-link > span {
+                font-size: $font-size-nav-lg;
             }
         }
     }
@@ -61,10 +61,10 @@
 // Extra Large (xl)
 @media (min-width: 1200px) {
     /* Navbar */
-    nav {
-        ul {
-            a > span {
-                font-size: $font-size-xl;
+    .navbar {
+        .navbar-nav {
+            .nav-link > span {
+                font-size: $font-size-nav-xl;
             }
         }
     }
@@ -72,10 +72,10 @@
 // Extra extra Large (xxl)
 @media (min-width: 1400px) {
     /* Navbar */
-    nav {
-        ul {
-            a > span {
-                font-size: $font-size-xxl;
+    .navbar {
+        .navbar-nav {
+            .nav-link > span {
+                font-size: $font-size-nav-xxl;
             }
         }
     }

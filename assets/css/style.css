@@ -23,6 +23,7 @@ body {
   font-family: "Reem Kufi", sans-serif;
   background-color: #393441;
   letter-spacing: 0.1rem;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@ header {
 }
 
 /* ------- Navbar ------- */
-nav ul {
+.navbar .navbar-nav {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -43,18 +44,19 @@ nav ul {
   justify-content: space-between;
   margin-top: 1rem;
   padding-right: 2rem;
+  padding-left: 2rem;
 }
-nav ul a > span {
+.navbar .navbar-nav .nav-link > span {
   color: #FAF8FF;
   display: inline-block;
   font-size: 1rem;
   transition: 300ms;
   position: relative;
 }
-nav ul a > span:hover {
+.navbar .navbar-nav .nav-link > span:hover {
   color: #FBBA83;
 }
-nav ul a > span:after {
+.navbar .navbar-nav .nav-link > span:after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -66,7 +68,7 @@ nav ul a > span:after {
   transform-origin: bottom right;
   transition: transform 300ms ease-out;
 }
-nav ul a > span:hover:after {
+.navbar .navbar-nav .nav-link > span:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -117,8 +119,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 @media (min-width: 768px) {
   /* Navbar */
-  nav ul a > span {
-    font-size: 1.05rem;
+  .navbar .navbar-nav .nav-link > span {
+    font-size: 1.1rem;
   }
 
   /* Welcome section */
@@ -141,20 +143,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 @media (min-width: 992px) {
   /* Navbar */
-  nav ul a > span {
-    font-size: 1.1rem;
+  .navbar .navbar-nav .nav-link > span {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 1200px) {
   /* Navbar */
-  nav ul a > span {
-    font-size: 1.15rem;
+  .navbar .navbar-nav .nav-link > span {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1400px) {
   /* Navbar */
-  nav ul a > span {
-    font-size: 1.2rem;
+  .navbar .navbar-nav .nav-link > span {
+    font-size: 1.8rem;
   }
 }
 

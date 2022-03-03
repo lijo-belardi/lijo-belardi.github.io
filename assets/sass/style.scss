@@ -33,8 +33,8 @@ header {
 }
 
 /* ------- Navbar ------- */
-nav {
-    ul {
+.navbar {
+    .navbar-nav {
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -44,21 +44,19 @@ nav {
         padding-right: 2rem;
         padding-left: 2rem;
 
-        
-
-        a > span {
+        .nav-link > span {
             color: $secondary-color;
             display: inline-block;
-            font-size: $font-size-sm;
+            font-size: $font-size-nav-sm;
             transition: $transition-time;
             position: relative;
         }
 
-        a > span:hover {
+        .nav-link > span:hover {
             color: $tertiary-color;
         }
 
-        a > span:after {
+        .nav-link > span:after {
             content: " ";
             position: absolute;
             width: 100%;
@@ -71,7 +69,7 @@ nav {
             transition: transform $transition-time ease-out;
         }
 
-        a > span:hover:after {
+        .nav-link > span:hover:after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
