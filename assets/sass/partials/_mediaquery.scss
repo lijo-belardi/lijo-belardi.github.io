@@ -13,7 +13,6 @@
 
 // Small (sm)
 @media (min-width: 576px) {
-   
 }
 // Medium (md)
 @media (min-width: 768px) {
@@ -27,8 +26,26 @@
     }
 
     /* Welcome section */
-
-  
+    .welcome {
+        .d-flex {
+            .welcome-box-text {
+                margin-left: -5.5rem;
+            }
+            .welcome-name {
+                padding: 0rem 8.125rem;
+                font-size: $font-size-name-md;
+            }
+            .welcome-line {
+                margin: 0rem 0.25rem;
+            }
+            .welcome-carousel {
+                font-size: $font-size-words-md;
+            }
+            .img {
+                padding-bottom: 2rem;
+            }
+        }
+    }
 }
 // Large (lg)
 @media (min-width: 992px) {
