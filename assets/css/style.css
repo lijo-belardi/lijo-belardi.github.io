@@ -112,16 +112,28 @@ header {
 
 /* ------- About section ------- */
 .about {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.about-title h1 {
+  margin-bottom: 0;
+  color: #FBBA83;
+  text-align: center;
+  font-weight: lighter;
 }
 .about-description {
   text-align: justify;
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* ------- Skills ------- */
@@ -135,6 +147,17 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
 }
 
+@media (max-width: 575px) {
+  /* Navbar */
+  /* Welcome section */
+  /* About Me */
+  .about {
+    height: 130vh;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 768px) {
   /* Navbar */
   .navbar .navbar-nav .nav-link > span {
@@ -166,11 +189,22 @@ h1, h2, h3, h4, h5, h6, p, a {
     height: 20rem;
     width: 20rem;
   }
+
+  /* About section */
+  .about {
+    height: 80vh;
+    margin-top: 0;
+  }
 }
 @media (min-width: 992px) {
   /* Navbar */
   .navbar .navbar-nav .nav-link > span {
     font-size: 1.4rem;
+  }
+
+  /* About section */
+  .about-description {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
@@ -216,6 +250,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
   .welcome-box-img img {
     max-width: 100%;
+  }
+
+  /* About section */
+  .about-description {
+    font-size: 1.4rem;
   }
 }
 

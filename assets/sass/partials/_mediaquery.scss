@@ -2,7 +2,17 @@
 @use "utilities" as *;
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-@media (min-width: 0px) {
+@media (max-width: 575px) {
+    /* Navbar */ 
+    /* Welcome section */
+    /* About Me */
+    .about {
+        height: 130vh;
+        
+        &-description {
+            font-size: $font-size-about-description-xs;
+        }
+    }
 }
 
 // Small (sm)
@@ -46,6 +56,11 @@
             width: 20rem;
         }
     }
+    /* About section */
+    .about {
+        height: 80vh;
+        margin-top: 0;
+    }
 }
 // Large (lg)
 @media (min-width: 992px) {
@@ -55,6 +70,12 @@
             .nav-link > span {
                 font-size: $font-size-nav-lg;
             }
+        }
+    }
+    /* About section */
+    .about {
+        &-description {
+            font-size: $font-size-about-description-lg;
         }
     }
 }
@@ -115,6 +136,13 @@
             img {
                 max-width: 100%;
             }
+        }
+    }
+
+    /* About section */
+    .about {
+        &-description {
+            font-size: $font-size-about-description-xxl;
         }
     }
 }
