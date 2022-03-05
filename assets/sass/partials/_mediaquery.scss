@@ -4,19 +4,19 @@
 /* --- Extra Small (XS - 575px)  ---- */
 
 @media (max-width: 575px) {
-    /* Navbar */
+    /* -- Navbar -- */
     .navbar-nav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-    /* Welcome section */
+    /* -- Welcome section -- */
     .welcome {
         height: auto;
     }
-    
-    /* About Me */
+
+    /* -- About Me -- */
     .about {
         height: auto;
 
@@ -25,7 +25,7 @@
         }
     }
 
-    /* Skill */
+    /* -- Skill -- */
     .skill {
         height: auto;
         margin-top: 5rem;
@@ -52,7 +52,6 @@
         }
     }
     /* Skill */
-    
 }
 
 /* --- Small (SM - 576px)  ---- */
@@ -62,6 +61,12 @@
     .skill {
         height: auto;
         margin-top: 5rem;
+    }
+    /* Footer */
+    .footer-email {
+        a {
+            font-size: $font-size-footer-email-sm;
+        }
     }
 }
 
@@ -76,8 +81,6 @@
             margin-top: 2rem;
         }
     }
-
-    
 }
 
 /* --- Medium (MD - 768px)  ---- */
@@ -127,6 +130,26 @@
 
         .btn-primary {
             margin-top: 2rem;
+        }
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &-email {
+            a {
+                font-size: $font-size-footer-email-md;
+            }
+        }
+
+        &-social {
+           img {
+               width: $footer-img-width-md;
+           } 
         }
     }
 }

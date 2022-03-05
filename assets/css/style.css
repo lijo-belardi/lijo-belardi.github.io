@@ -172,12 +172,43 @@ header {
 .skill h1 {
   color: #FBBA83;
 }
-.skill-logo img {
-  max-width: 100%;
+.skill img {
+  transition: 300ms;
 }
+.skill img:hover {
+  transform: scale(0.9);
+}
+
 /* ------- Footer ------- */
 footer {
   margin-top: auto;
+  background-color: #2f2a36;
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  height: 20vh;
+}
+.footer-email a:hover {
+  color: #FBBA83;
+}
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  width: 12.5rem;
+  justify-content: space-evenly;
+}
+.footer-social img {
+  width: 1.875rem;
+  transition: 300ms;
+}
+.footer-social img:hover {
+  transform: scale(0.9);
 }
 
 /* TODO risolvere */
@@ -212,7 +243,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* --- Extra Small (XS - 575px)  ---- */
 @media (max-width: 575px) {
-  /* Navbar */
+  /* -- Navbar -- */
   .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -220,12 +251,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     align-items: center;
   }
 
-  /* Welcome section */
+  /* -- Welcome section -- */
   .welcome {
     height: auto;
   }
 
-  /* About Me */
+  /* -- About Me -- */
   .about {
     height: auto;
   }
@@ -233,7 +264,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 1rem;
   }
 
-  /* Skill */
+  /* -- Skill -- */
   .skill {
     height: auto;
     margin-top: 5rem;
@@ -264,6 +295,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   .skill {
     height: auto;
     margin-top: 5rem;
+  }
+
+  /* Footer */
+  .footer-email a {
+    font-size: 1.4rem;
   }
 }
 @media (orientation: landscape) and (min-width: 576px) {
@@ -316,6 +352,20 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
   .about .btn-primary {
     margin-top: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-email a {
+    font-size: 1.7rem;
+  }
+  .footer-social img {
+    width: 2.2rem;
   }
 }
 @media (orientation: landscape) and (min-width: 768px) {

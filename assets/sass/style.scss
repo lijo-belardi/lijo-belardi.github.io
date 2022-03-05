@@ -2,7 +2,6 @@
 
 /* ------- General style ------- */
 
-
 *,
 *::before,
 *::after {
@@ -96,10 +95,10 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
         h1 {
-           color: $tertiary-color; 
-           font-size: $font-size-name-sm;
+            color: $tertiary-color;
+            font-size: $font-size-name-sm;
         }
         .welcome-line {
             background-color: $tertiary-color;
@@ -133,7 +132,7 @@ header {
             margin-bottom: 0;
             color: $tertiary-color;
             text-align: center;
-            font-weight:lighter;
+            font-weight: lighter;
         }
     }
 
@@ -155,25 +154,53 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 75vh;
-    
+
     h1 {
         color: $tertiary-color;
     }
 
-    &-logo {
-        img {
-            max-width: 100%;
-        }
-        img:hover {
-            
-        }
+    img {
+        transition: $transition-time;
+    }
+
+    img:hover {
+        transform: scale(0.9);
     }
 }
 
 /* ------- Footer ------- */
 footer {
     margin-top: auto;
+    background-color: $primary-color-inverse;
 }
 
+.footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: $font-size-footer-email-xs;
+    height: 20vh;
+
+    &-email {
+        
+
+        a:hover {
+            color: $tertiary-color;
+        }
+    }
+
+    &-social {
+       
+        display: flex;
+        flex-direction: row;
+        width: 12.5rem;
+        justify-content: space-evenly;
+        
+        img {width: $footer-img-width-xs; transition: $transition-time;}
+        img:hover {transform: scale(0.9);}
+    }
+}
 
 @import "../sass/partials/mediaquery";
