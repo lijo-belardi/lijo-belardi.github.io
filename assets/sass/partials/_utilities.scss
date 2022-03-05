@@ -4,6 +4,10 @@
 // Transition
 $transition-time: 300ms;
 
+// Bootstrap padding fixed
+[class*="col-"] {
+    padding: 1rem;
+  }
 
 // Welcome-line
 $line-height-welcome-sm: 0.313rem;

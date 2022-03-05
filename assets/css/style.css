@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
 }
 
+[class*=col-] {
+  padding: 1rem;
+}
+
 .btn-primary {
   background-color: #FBBA83;
   color: #393441;
@@ -22,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #393441;
 }
 
+/* ------- General style ------- */
 *,
 *::before,
 *::after {
@@ -138,7 +143,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  outline: 1px solid red;
 }
 .about-title h1 {
   margin-bottom: 0;
@@ -158,6 +162,19 @@ header {
 }
 
 /* ------- Skills ------- */
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75vh;
+}
+.skill h1 {
+  color: #FBBA83;
+}
+.skill-logo img {
+  max-width: 100%;
+}
 /* ------- Footer ------- */
 footer {
   margin-top: auto;
@@ -166,6 +183,10 @@ footer {
 /* TODO risolvere */
 h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
+}
+
+[class*=col-] {
+  padding: 1rem;
 }
 
 .btn-primary {
@@ -211,8 +232,15 @@ h1, h2, h3, h4, h5, h6, p, a {
   .about-description {
     font-size: 1rem;
   }
+
+  /* Skill */
+  .skill {
+    height: auto;
+    margin-top: 5rem;
+  }
 }
 @media (orientation: landscape) and (max-width: 575px) {
+  /* Main */
   .main {
     display: flex;
     flex-direction: column;
@@ -227,8 +255,17 @@ h1, h2, h3, h4, h5, h6, p, a {
   .main .about .btn-primary {
     margin-top: 2.5rem;
   }
+
+  /* Skill */
 }
 /* --- Small (SM - 576px)  ---- */
+@media (min-width: 576px) {
+  /* Skill */
+  .skill {
+    height: auto;
+    margin-top: 5rem;
+  }
+}
 @media (orientation: landscape) and (min-width: 576px) {
   .welcome,
 .about {
@@ -304,7 +341,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 1.3rem;
   }
 }
-/* --- Extra Large (XXL - 1200px)  ---- */
+/* --- Extra Large (XL - 1200px)  ---- */
 @media (min-width: 1200px) {
   /* Navbar */
   .navbar .navbar-nav .nav-link > span {
@@ -366,6 +403,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
   .about-description {
     font-size: 1.4rem;
+  }
+
+  /* Skill section */
+  .skill {
+    height: 100vh;
   }
 }
 

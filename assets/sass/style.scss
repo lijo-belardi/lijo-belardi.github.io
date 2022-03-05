@@ -1,5 +1,8 @@
 @use "../sass/partials" as *;
 
+/* ------- General style ------- */
+
+
 *,
 *::before,
 *::after {
@@ -124,7 +127,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    outline: 1px solid red;
 
     &-title {
         h1 {
@@ -147,10 +149,31 @@ header {
     }
 }
 /* ------- Skills ------- */
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    
+    h1 {
+        color: $tertiary-color;
+    }
+
+    &-logo {
+        img {
+            max-width: 100%;
+        }
+        img:hover {
+            
+        }
+    }
+}
 
 /* ------- Footer ------- */
 footer {
     margin-top: auto;
 }
+
 
 @import "../sass/partials/mediaquery";
