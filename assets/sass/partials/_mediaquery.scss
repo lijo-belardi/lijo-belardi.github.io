@@ -1,24 +1,60 @@
 @use "fonts" as *;
 @use "utilities" as *;
 
-// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+/* --- Extra Small (XS - 575px)  ---- */
+
 @media (max-width: 575px) {
-    /* Navbar */ 
+    /* Navbar */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     /* Welcome section */
+    .welcome {
+        height: auto;
+    }
     /* About Me */
     .about {
-        height: 130vh;
-        
+        height: auto;
+
         &-description {
             font-size: $font-size-about-description-xs;
         }
     }
 }
 
-// Small (sm)
+// Extra Small - (xs) - Landscape
+@media (orientation: landscape) and (max-width: 575px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .welcome {
+            height: auto;
+        }
+        .about {
+            height: auto;
+        }
+    }
+}
+
+/* --- Small (SM - 576px)  ---- */
+
 @media (min-width: 576px) {
 }
-// Medium (md)
+
+@media (orientation: landscape) and (min-width: 576px) {
+    .welcome,
+    .about {
+        height: auto;
+    }
+}
+
+/* --- Medium (MD - 768px)  ---- */
+
 @media (min-width: 768px) {
     /* Navbar */
     .navbar {
@@ -34,7 +70,7 @@
         height: 55vh;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-evenly;
 
         &-box-text {
@@ -56,13 +92,23 @@
             width: 20rem;
         }
     }
+
     /* About section */
     .about {
         height: 80vh;
         margin-top: 0;
     }
 }
-// Large (lg)
+
+@media (orientation: landscape) and (min-width: 768px) {
+    .welcome,
+    .about {
+        height: auto;
+    }
+}
+
+/* --- Large (LG - 992px)  ---- */
+
 @media (min-width: 992px) {
     /* Navbar */
     .navbar {
@@ -72,14 +118,22 @@
             }
         }
     }
+
     /* About section */
     .about {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
         &-description {
             font-size: $font-size-about-description-lg;
         }
     }
 }
-// Extra Large (xl)
+
+/* --- Extra Large (XXL - 1200px)  ---- */
+
 @media (min-width: 1200px) {
     /* Navbar */
     .navbar {
@@ -89,8 +143,12 @@
             }
         }
     }
+ 
     /* Welcome - section */
     .welcome {
+        height: auto;
+        
+
         &-box-text {
             height: 22.5rem;
             width: 22.5rem;
@@ -104,8 +162,16 @@
             width: 22.5rem;
         }
     }
+
+    /* About - section  */
+    .about {
+        height: auto;
+        margin-top: 2rem;
+    }
 }
-// Extra extra Large (xxl)
+
+/* --- Extra Extra Large (XXL - 1400px)  ---- */
+
 @media (min-width: 1400px) {
     /* Navbar */
     .navbar {
