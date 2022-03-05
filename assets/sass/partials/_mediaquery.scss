@@ -37,6 +37,10 @@
         }
         .about {
             height: auto;
+
+            .btn-primary {
+                margin-top: 2.5rem;
+            }
         }
     }
 }
@@ -50,6 +54,12 @@
     .welcome,
     .about {
         height: auto;
+    }
+
+    .about {
+        .btn-primary {
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -95,8 +105,12 @@
 
     /* About section */
     .about {
-        height: 80vh;
+        height: 88vh;
         margin-top: 0;
+
+        .btn-primary {
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -120,8 +134,7 @@
     }
 
     /* About section */
-    .about {
-        
+    .about { 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -207,6 +220,8 @@
 
     /* About section */
     .about {
+        height: 70vh;
+
         &-description {
             font-size: $font-size-about-description-xxl;
         }

@@ -3,6 +3,9 @@
 // Font - type
 $font-family: 'Reem Kufi', sans-serif;
 
+// Letter's space
+$letter-spacing-default: 0.15rem;
+
 // Font - size
 $font-size-nav-sm: 1rem;
 $font-size-nav-md: 1.20rem;
@@ -27,8 +30,7 @@ $font-size-about-description-sm: 1.2rem;
 $font-size-about-description-lg: 1.3rem;
 $font-size-about-description-xxl: 1.4rem;
 
-// Letter's space
-$letter-spacing-default: 0.15rem;
+
 
 // Setting text's color
 h1, h2, h3, h4, h5, h6, p, a {
