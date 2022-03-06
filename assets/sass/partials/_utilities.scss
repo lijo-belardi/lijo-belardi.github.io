@@ -7,7 +7,7 @@ $transition-time: 300ms;
 // Bootstrap padding fixed
 [class*="col-"] {
     padding: 1rem;
-  }
+}
 
 // Welcome-line
 $line-height-welcome-sm: 0.313rem;
@@ -29,14 +29,135 @@ $line-height-welcome-xxl: 0.313rem;
     &:hover {
         background-color: $secondary-color;
         color: $primary-color;
-        transform: scale(.98);
-
+        transform: scale(0.98);
     }
 
     &:focus {
         background-color: $tertiary-color;
         color: $primary-color;
     }
+}
+
+// Card
+$padding-card-content: 0.5rem;
+
+.card {
+    background-color: $primary-color-inverse;
+    background-size: cover;
+    max-width: 45ch;
+    overflow: hidden;
+    transition: transform $transition-time ease;
+
+    &-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &-content {
+        padding: $padding-card-content;
+        margin: auto;
+        background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3) 20%, hsl(0 0 0 / 1));
+
+        .button {
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 3.75rem;
+            padding: 0.5rem 0.2rem;
+            color: $primary-color;
+            width: 50%;
+            background-color: $tertiary-color;
+            transition: $transition-time;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary-color;
+            }
+        }
+    }
+
+    &-title {
+        position: relative;
+        max-width: max-content;
+        outline: 1px solid red;
+        margin-bottom: 1%;
+    }
+    &-title::after {
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: calc(100% + $padding-card-content);
+        left: calc($padding-card-content * -1);
+        bottom: 0;
+        background: $tertiary-color;
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
+
+    &:hover &-title::after,
+    &:focus-within &-title::after {
+        transform: scaleX(1);
+    }
+
+    .text-white {
+        color: $secondary-color !important;
+    }
+    .text-dark {
+        color: $primary-color !important;
+    }
+}
+
+@media (hover) {
+    .card {
+
+        &:hover, &:focus-within {
+            transform: scale(1.015);
+        }
+
+        &-content {
+            transform: translateY(60%);
+            transition: transform 500ms ease;
+        }
+
+
+        &:hover &-content,
+        &:focus-within &-content {
+            transform: translateY(0);
+            transition-delay: 500ms;
+        }
+
+        &:focus-within &-content {
+            transition-duration: 0ms;
+        }
+
+        &-content > *:not(.card-title) {
+            opacity: 0;
+            transition: opacity 500ms linear;
+        }
+
+        &:hover &-content > *:not(.card-title),
+        &:focus-within &-content > *:not(.card-title) {
+            opacity: 1;
+            transition-delay: 1000ms;
+        }
+
+        &-title::after {
+            transform: scaleX(0);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+        transition-delay: 0ms!important;
+
+    }
+
 }
 
 // Footer img
