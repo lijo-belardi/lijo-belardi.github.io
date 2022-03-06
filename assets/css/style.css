@@ -160,6 +160,9 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
+.about-resume {
+  text-align: center;
+}
 
 /* ------- Skills ------- */
 .skill {
