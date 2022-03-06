@@ -197,6 +197,9 @@ footer {
   font-size: 1rem;
   height: 20vh;
 }
+.footer-email a {
+  transition: 300ms;
+}
 .footer-email a:hover {
   color: #FBBA83;
 }

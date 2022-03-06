@@ -188,8 +188,12 @@ footer {
     height: 20vh;
 
     &-email {
+        a {
+            transition: $transition-time;
+        }
         a:hover {
             color: $tertiary-color;
+            
         }
     }
 
