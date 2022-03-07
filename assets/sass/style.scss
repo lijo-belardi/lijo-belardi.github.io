@@ -137,6 +137,7 @@ header {
     }
 
     &-description {
+        margin-top: 2rem;
         text-align: justify;
         font-size: $font-size-about-description-sm;
         letter-spacing: $letter-spacing-default;
