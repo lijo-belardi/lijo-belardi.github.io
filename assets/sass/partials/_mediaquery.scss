@@ -3,7 +3,7 @@
 
 /* --- Extra Small (XS - 575px)  ---- */
 
-@media (max-width: 575px) {
+@media (min-width: 0) {
     /* -- Navbar -- */
     .navbar-nav {
         display: flex;
@@ -11,6 +11,7 @@
         flex-wrap: wrap;
         align-items: center;
     }
+    
     /* -- Welcome section -- */
     .welcome {
         height: auto;
@@ -64,7 +65,13 @@
     }
     /* Projects */
     .card-content {
-        transform: translateY(45%);
+        transform: translateY(75%);
+        font-size: small;
+    }
+
+    .card-django {
+        transform: translateY(65%);
+        font-size: x-small;
     }
     /* Footer */
     .footer-email {
@@ -137,6 +144,11 @@
         }
     }
 
+    /* Projects */ 
+    .card-content {
+        transform: translateY(60%);
+        font-size: medium;
+    }
     /* Footer */
     .footer {
         display: flex;
@@ -186,6 +198,12 @@
         &-description {
             font-size: $font-size-about-description-lg;
         }
+    }
+
+    /* Projects */ 
+    .card-content {
+        transform: translateY(45%);
+        font-size: large;
     }
 }
 

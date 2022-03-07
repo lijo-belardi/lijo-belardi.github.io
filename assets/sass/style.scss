@@ -179,23 +179,12 @@ header {
     justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    min-height: 100vh;
-    outline: 1px solid green;
-
-    &-title {
-        outline: 1px solid blue;
-        h1 {
-            color: $tertiary-color;
-        }
+   
+    
+    h1 {
+        color: $tertiary-color;
     }
 
-    &-grid {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        outline: 1px solid red;
-    }
 }
 /* ------- Footer ------- */
 footer {
