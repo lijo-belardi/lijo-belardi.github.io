@@ -358,11 +358,14 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-top: 7rem;
   margin-bottom: 2rem;
 }
 .project h1 {
   color: #FBBA83;
+}
+.project-grid {
+  margin-top: 2rem;
 }
 
 /* ------- Footer ------- */
@@ -563,6 +566,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   /*-- Projects-- */
+  .project {
+    margin-top: 15rem;
+  }
+
   .card-content {
     transform: translateY(60%);
     font-size: medium;

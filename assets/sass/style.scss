@@ -257,11 +257,15 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
 
     h1 {
         color: $tertiary-color;
+    }
+
+    &-grid {
+        margin-top: 2rem;
     }
 }
 /* ------- Footer ------- */
