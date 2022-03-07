@@ -58,7 +58,7 @@ header {
             color: $tertiary-color;
         }
 
-        .nav-link > span:after {
+        .nav-link > span::after {
             content: " ";
             position: absolute;
             width: 100%;
@@ -71,7 +71,7 @@ header {
             transition: transform $transition-time ease-out;
         }
 
-        .nav-link > span:hover:after {
+        .nav-link > span:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
