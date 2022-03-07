@@ -48,6 +48,7 @@ $padding-card-content: 0.5rem;
     &-title {
         position: relative;
         max-width: max-content;
+        text-align: left;
         margin-bottom: 1%;
     }
     &-title::after {
