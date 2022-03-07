@@ -154,30 +154,93 @@ body {
 
 /* ------- Header ------- */
 header {
-  background-color: #2f2a36;
+  background: #2f2a36;
+  text-align: center;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 999;
 }
 
 /* ------- Navbar ------- */
-.navbar .navbar-nav {
-  list-style-type: none;
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 30px;
+  cursor: pointer;
+}
+.nav-toggle-label span {
+  margin-top: 45%;
+  margin-bottom: 45%;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background-color: #FAF8FF;
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: " ";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+.navbar {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background: #2f2a36;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
   display: flex;
   flex-direction: row;
-  flex-basis: 100%;
-  justify-content: space-between;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  justify-content: center;
 }
-.navbar .navbar-nav .nav-link > span {
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.navbar .nav-item {
+  text-align: center;
+}
+.navbar .nav-link {
+  font-size: 1rem;
+  color: #FAF8FF;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+.navbar .nav-link > span {
   color: #FAF8FF;
   display: inline-block;
   font-size: 1rem;
   transition: 300ms;
   position: relative;
 }
-.navbar .navbar-nav .nav-link > span:hover {
+.navbar .nav-link > span:hover {
   color: #FBBA83;
 }
-.navbar .navbar-nav .nav-link > span::after {
+.navbar .nav-link > span::after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -189,15 +252,24 @@ header {
   transform-origin: bottom right;
   transition: transform 300ms ease-out;
 }
-.navbar .navbar-nav .nav-link > span:hover::after {
+.navbar .nav-link > span:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.nav-toggle:checked ~ .navbar {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ .navbar .nav-link {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
 /* ------- Main container ------- */
 /* ------- Welcome section ------- */
 .welcome {
-  margin-top: 1.7rem;
+  margin-top: 0.3rem;
   height: 65vh;
   display: flex;
   flex-direction: column;
@@ -339,20 +411,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* --- Extra Small (XS - 575px)  ---- */
 @media (min-width: 0) {
-  /* -- Navbar -- */
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  /* -- Welcome section -- */
+  /* -- Welcome -- */
   .welcome {
     height: auto;
   }
 
-  /* -- About Me -- */
+  /* -- About -- */
   .about {
     height: auto;
   }
@@ -367,7 +431,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 }
 @media (orientation: landscape) and (max-width: 575px) {
-  /* Main */
+  /* -- Main -- */
   .main {
     display: flex;
     flex-direction: column;
@@ -382,18 +446,21 @@ h1, h2, h3, h4, h5, h6, p, a {
   .main .about .btn-primary {
     margin-top: 2.5rem;
   }
-
-  /* Skill */
 }
 /* --- Small (SM - 576px)  ---- */
 @media (min-width: 576px) {
-  /* Skill */
+  /*  -- Skill -- */
   .skill {
     height: auto;
     margin-top: 5rem;
   }
 
-  /* Projects */
+  /* -- About -- */
+  .about {
+    margin-top: 3rem;
+  }
+
+  /* -- Projects -- */
   .card-content {
     transform: translateY(75%);
     font-size: small;
@@ -404,30 +471,64 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: x-small;
   }
 
-  /* Footer */
+  /* -- Footer -- */
   .footer-email a {
     font-size: 1.4rem;
   }
 }
 @media (orientation: landscape) and (min-width: 576px) {
+  /* -- Welcome + About -- */
   .welcome,
 .about {
     height: auto;
   }
 
+  /*-- About-- */
   .about .btn-primary {
     margin-top: 2rem;
   }
 }
 /* --- Medium (MD - 768px)  ---- */
 @media (min-width: 768px) {
-  /* Navbar */
-  .navbar .navbar-nav .nav-link > span {
-    font-size: 1.2rem;
+  /*-- Navbar-- */
+  .nav-toggle-label {
+    display: none;
   }
 
-  /* Welcome section */
+  header {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 67px;
+    margin-right: 67px;
+    min-height: 80%;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 1rem;
+  }
+
+  .navbar .nav-link {
+    opacity: 1 !important;
+    max-width: fit-content;
+  }
+
+  /*-- Welcome-- */
   .welcome {
+    margin-top: 10rem;
     height: 55vh;
     display: flex;
     flex-direction: row;
@@ -452,22 +553,22 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: 20rem;
   }
 
-  /* About section */
+  /*-- About-- */
   .about {
     height: 88vh;
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
   .about .btn-primary {
     margin-top: 2rem;
   }
 
-  /* Projects */
+  /*-- Projects-- */
   .card-content {
     transform: translateY(60%);
     font-size: medium;
   }
 
-  /* Footer */
+  /*-- Footer-- */
   .footer {
     display: flex;
     flex-direction: row;
@@ -489,12 +590,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 /* --- Large (LG - 992px)  ---- */
 @media (min-width: 992px) {
-  /* Navbar */
-  .navbar .navbar-nav .nav-link > span {
-    font-size: 1.4rem;
+  /*-- Navbar-- */
+  .navbar {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
-  /* About section */
+  /*-- About-- */
   .about {
     display: flex;
     flex-direction: column;
@@ -504,7 +606,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 1.3rem;
   }
 
-  /* Projects */
+  /*-- Projects-- */
   .card-content {
     transform: translateY(45%);
     font-size: large;
@@ -512,12 +614,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 /* --- Extra Large (XL - 1200px)  ---- */
 @media (min-width: 1200px) {
-  /* Navbar */
-  .navbar .navbar-nav .nav-link > span {
-    font-size: 1.6rem;
+  /*-- Navbar-- */
+  .navbar {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
-  /* Welcome - section */
+  /*-- Welcome-- */
   .welcome {
     height: auto;
   }
@@ -533,20 +636,21 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: 22.5rem;
   }
 
-  /* About - section  */
+  /*-- About-- */
   .about {
     height: auto;
-    margin-top: 2rem;
+    margin-top: 6.5rem;
   }
 }
 /* --- Extra Extra Large (XXL - 1400px)  ---- */
 @media (min-width: 1400px) {
-  /* Navbar */
-  .navbar .navbar-nav .nav-link > span {
-    font-size: 1.8rem;
+  /*-- Navbar-- */
+  .navbar {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-  /* Welcome section */
+  /* -- Welcome -- */
   .welcome-box-text {
     height: 25rem;
     width: 25rem;
@@ -566,16 +670,18 @@ h1, h2, h3, h4, h5, h6, p, a {
     max-width: 100%;
   }
 
-  /* About section */
+  /* -- About -- */
   .about {
+    margin-top: 10rem;
     height: 70vh;
   }
   .about-description {
     font-size: 1.4rem;
   }
 
-  /* Skill section */
+  /* -- Skill -- */
   .skill {
+    margin-top: 2rem;
     height: 100vh;
   }
 }
