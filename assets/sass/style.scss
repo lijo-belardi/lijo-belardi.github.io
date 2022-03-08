@@ -230,12 +230,16 @@ header {
     &-resume {
         text-align: center;
         display: flex;
+        min-height: 100px;
         flex-direction: column;
-        justify-content: space-around;
-
-        a {
+        justify-content: center;
+        
+        a { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin: auto;
-            height: auto;
+            height: 70px;
         }
     }
 }
