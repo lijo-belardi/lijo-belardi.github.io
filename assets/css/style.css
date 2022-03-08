@@ -333,6 +333,13 @@ header {
 }
 .about-resume {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-resume a {
+  margin: auto;
+  height: auto;
 }
 
 /* ------- Skills ------- */

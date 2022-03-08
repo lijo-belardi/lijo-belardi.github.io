@@ -229,6 +229,14 @@ header {
 
     &-resume {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        a {
+            margin: auto;
+            height: auto;
+        }
     }
 }
 /* ------- Skills ------- */
