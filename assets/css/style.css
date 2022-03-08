@@ -618,6 +618,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 }
 @media (orientation: landscape) and (min-width: 768px) {
+  /* -- Header -- */
+  header {
+    min-height: 70px;
+  }
+
   .welcome,
 .about {
     height: auto;
