@@ -303,7 +303,48 @@ header {
         margin-top: 2rem;
     }
 }
+/* ------- Contact me ------- */
+.contact {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        min-height: 30vh;
+    }
+    
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content:space-evenly;
+        
+        .form-control {
+            color: $primary-color-inverse;
+            background-color: $secondary-color;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: $transition-time;            
+        }
+
+        .form-control:focus {
+            background-color: $tertiary-color;
+            border-color: $primary-color;
+            box-shadow: $primary-color;
+        }
+        button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}
 /* ------- Footer ------- */
 footer {
     margin-top: auto;
