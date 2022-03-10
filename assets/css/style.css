@@ -430,7 +430,7 @@ header {
 .contact-form .form-control:focus {
   background-color: #FBBA83;
   border-color: #393441;
-  box-shadow: #393441;
+  box-shadow: 0 0 0 1px #393441;
 }
 .contact-form button {
   margin-left: auto;
