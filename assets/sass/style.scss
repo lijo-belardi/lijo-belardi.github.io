@@ -251,17 +251,13 @@ header {
     align-items: center;
     height: 75vh;
 
+    &-title, &-grid {
+    }
+
     h1 {
         color: $tertiary-color;
     }
 
-    img {
-        transition: $transition-time;
-    }
-
-    img:hover {
-        transform: scale(0.9);
-    }
 }
 /* ------- Projects ------- */
 .project {

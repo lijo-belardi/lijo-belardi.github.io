@@ -124,6 +124,17 @@ h1, h2, h3, h4, h5, h6, p, a {
     transition-delay: 0ms !important;
   }
 }
+.modal {
+  color: #FAF8FF;
+}
+.modal .btn-close {
+  background-color: #FAF8FF;
+}
+.modal-content {
+  background-color: #2f2a36;
+  text-align: left;
+}
+
 /* ------- General style ------- */
 *,
 *::before,
@@ -356,12 +367,6 @@ header {
 .skill h1 {
   color: #FBBA83;
 }
-.skill img {
-  transition: 300ms;
-}
-.skill img:hover {
-  transform: scale(0.9);
-}
 
 /* ------- Projects ------- */
 .project {
@@ -497,7 +502,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   /* -- Skill -- */
   .skill {
     height: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
 @media (orientation: landscape) and (max-width: 575px) {
@@ -522,7 +527,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   /*  -- Skill -- */
   .skill {
     height: auto;
-    margin-top: 5rem;
+    margin: 3rem auto;
   }
 
   /* -- About -- */
@@ -712,6 +717,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 1.3rem;
   }
 
+  /*-- Skill-- */
+  .skill {
+    margin: 5rem auto;
+    min-height: 40vh;
+  }
+
   /*-- Projects-- */
   .project .card-content {
     transform: translateY(45%);
@@ -770,6 +781,12 @@ h1, h2, h3, h4, h5, h6, p, a {
   .about {
     height: auto;
     margin-top: 6.5rem;
+  }
+
+  /* -- Skill-- */
+  .skill {
+    margin: 5rem auto !important;
+    min-height: 40vh;
   }
 
   /* -- Article -- */
@@ -838,7 +855,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   /* -- Skill -- */
   .skill {
     margin-top: 2rem;
-    height: 100vh;
   }
 
   /* -- Article -- */

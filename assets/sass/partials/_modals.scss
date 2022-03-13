@@ -1,0 +1,13 @@
+@use "colors" as *;
+
+.modal {
+    color: $secondary-color;
+
+    .btn-close {
+        background-color: $secondary-color;
+    }
+    &-content {
+        background-color: $primary-color-inverse;
+        text-align: left;
+    }
+}
