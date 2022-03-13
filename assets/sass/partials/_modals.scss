@@ -6,6 +6,9 @@
     .btn-close {
         background-color: $secondary-color;
     }
+    &-title, h5 {
+        font-weight: bold;
+    }
     &-content {
         background-color: $primary-color-inverse;
         text-align: left;
