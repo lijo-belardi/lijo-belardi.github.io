@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
 }
 
+b {
+  color: #FBBA83;
+}
+
 [class*=col-] {
   padding: 1rem;
 }
@@ -481,6 +485,10 @@ footer {
 
 h1, h2, h3, h4, h5, h6, p, a {
   color: #FAF8FF;
+}
+
+b {
+  color: #FBBA83;
 }
 
 [class*=col-] {

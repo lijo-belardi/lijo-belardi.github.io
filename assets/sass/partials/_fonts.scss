@@ -3,6 +3,14 @@
 // Font - type
 $font-family: 'Reem Kufi', sans-serif;
 
+// Setting text's color
+h1, h2, h3, h4, h5, h6, p, a {
+    color: $secondary-color;
+}
+
+// Setting for "b" tag
+b { color: $tertiary-color;}
+
 // Letter's space
 $letter-spacing-default: 0.15rem;
 
@@ -43,10 +51,3 @@ $font-size-contact-title-lg: 2.813rem;
 
 $font-size-contact-subtitle-md: 1.375rem;
 $font-size-contact-subtitle-lg: 1.563rem;
-
-
-
-// Setting text's color
-h1, h2, h3, h4, h5, h6, p, a {
-    color: $secondary-color;
-}
