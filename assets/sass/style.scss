@@ -251,8 +251,6 @@ header {
     align-items: center;
     height: 75vh;
 
-    
-
     h1 {
         color: $tertiary-color;
     }
@@ -264,40 +262,19 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
 
     h1 {
         color: $tertiary-color;
     }
+
 
     &-grid {
         margin-top: 2rem;
     }
 }
 
-/* ------- Articles ------- */
-.article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    
-
-    img {
-        max-height: 100%;
-    }
-
-    h1 {
-        color: $tertiary-color;
-    }
-
-    &-grid {
-        margin-top: 2rem;
-    }
-}
 /* ------- Contact me ------- */
 .contact {
     margin-top: 6rem;
