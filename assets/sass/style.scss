@@ -269,6 +269,13 @@ header {
         color: $tertiary-color;
     }
 
+    .card-link {
+        color: $tertiary-color;
+        text-decoration: underline;
+    }
+    .card-sass {
+        margin-left: 0.5rem;
+    }
 
     &-grid {
         margin-top: 2rem;

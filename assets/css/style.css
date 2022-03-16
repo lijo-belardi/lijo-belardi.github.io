@@ -37,6 +37,7 @@ b {
 }
 .card-img-top {
   min-width: 100%;
+  height: 250px;
 }
 .card-title {
   color: #FBBA83;
@@ -304,6 +305,13 @@ header {
 }
 .project h1 {
   color: #FBBA83;
+}
+.project .card-link {
+  color: #FBBA83;
+  text-decoration: underline;
+}
+.project .card-sass {
+  margin-left: 0.5rem;
 }
 .project-grid {
   margin-top: 2rem;
