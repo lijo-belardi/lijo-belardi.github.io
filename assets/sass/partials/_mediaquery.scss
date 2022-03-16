@@ -94,7 +94,7 @@
     }
 
     header {
-        min-height: 125px;
+        min-height: 7.813rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,8 +105,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 67px;
-        margin-right: 67px;
+        margin-left: 4.188rem;
+        margin-right: 4.188rem;
         min-height: 80%;
     }
 
@@ -216,7 +216,7 @@
 @media (orientation: landscape) and (min-width: 768px) {
     /* -- Header -- */
     header {
-        min-height: 70px;
+        min-height: 4.375rem;
     }
 
     .welcome,
@@ -230,8 +230,8 @@
 @media (min-width: 992px) {
     /*-- Navbar-- */
     .navbar {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     /*-- About-- */
@@ -261,7 +261,7 @@
 
         .form-control {
             max-width: 55%;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 }
@@ -271,8 +271,8 @@
 @media (min-width: 1200px) {
     /*-- Navbar--*/
     .navbar {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
     }
 
     /*-- Welcome-- */
@@ -327,8 +327,8 @@
 @media (min-width: 1400px) {
     /*-- Navbar-- */
     .navbar {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 
     /* -- Welcome -- */

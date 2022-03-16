@@ -34,7 +34,7 @@ header {
     background: $primary-color-inverse;
     text-align: center;
     position: fixed;
-    height: 60px;
+    height: 3.75rem;
     width: 100%;
     z-index: 999;
 }
@@ -48,7 +48,7 @@ header {
 .nav-toggle-label {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 30px;
+    height: 1.875rem;
     cursor: pointer;
     
     span {
@@ -61,9 +61,9 @@ header {
     span::after {
         display: block;
         background-color: $secondary-color;
-        height: 2px;
+        height: 0.125rem;
         width: 2rem;
-        border-radius: 2px;
+        border-radius: 0.125rem;
         position: relative;
     }
 
@@ -74,10 +74,10 @@ header {
     }
 
     span::before {
-        bottom: 7px;
+        bottom: 0.438rem;
     }
     span::after {
-        top: 7px;
+        top: 0.438rem;
     }
 }
 
@@ -230,7 +230,7 @@ header {
     &-resume {
         text-align: center;
         display: flex;
-        min-height: 100px;
+        min-height: 6.25rem;
         flex-direction: column;
         justify-content: center;
 
@@ -239,7 +239,7 @@ header {
             flex-direction: column;
             justify-content: center;
             margin: auto;
-            height: 70px;
+            height: 4.375rem;
         }
     }
 }
@@ -335,7 +335,7 @@ footer {
 }
 
 .footer {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
