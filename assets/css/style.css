@@ -310,6 +310,9 @@ header {
   color: #FBBA83;
   text-decoration: underline;
 }
+.project .card-single-link {
+  margin-left: 0rem;
+}
 .project .card-sass {
   margin-left: 0.5rem;
 }
