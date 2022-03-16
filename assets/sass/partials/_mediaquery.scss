@@ -164,9 +164,18 @@
         }
     }
 
-    
+    /* -- Portfolio */
+    .card {
+        height: 34.375rem;
+        position: relative;
 
-   
+        .btn-primary {
+            position: absolute;
+            bottom: 1.5rem;
+            
+        }
+    }
+
 
     /* -- Contact -- */
     .contact {

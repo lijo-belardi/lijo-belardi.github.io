@@ -547,6 +547,16 @@ b {
     margin-top: 2rem;
   }
 
+  /* -- Portfolio */
+  .card {
+    height: 34.375rem;
+    position: relative;
+  }
+  .card .btn-primary {
+    position: absolute;
+    bottom: 1.5rem;
+  }
+
   /* -- Contact -- */
   .contact-title {
     font-size: 2.5rem;
