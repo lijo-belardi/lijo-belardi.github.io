@@ -3,7 +3,7 @@
 @use "utilities" as *;
 
 // Button
-.btn-primary {
+.btn-primary, .btn-secondary {
     background-color: $tertiary-color;
     color: $primary-color;
     width: 9.375rem;

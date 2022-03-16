@@ -10,7 +10,7 @@ b {
   padding: 1rem;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
   background-color: #FBBA83;
   color: #393441;
   width: 9.375rem;
@@ -19,12 +19,12 @@ b {
   letter-spacing: 0.15rem;
   transition: 300ms;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-secondary:hover {
   background-color: #FAF8FF;
   color: #393441;
   transform: scale(0.98);
 }
-.btn-primary:focus {
+.btn-primary:focus, .btn-secondary:focus {
   background-color: #FBBA83;
   color: #393441;
 }
