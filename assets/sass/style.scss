@@ -46,8 +46,8 @@ header {
 }
 
 .nav-toggle-label {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    
     height: 1.875rem;
     cursor: pointer;
     
@@ -262,8 +262,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10rem;
-    margin-bottom: 7rem;
+    margin: 10rem auto 7rem;
 
     h1 {
         color: $tertiary-color;
@@ -311,8 +310,7 @@ header {
             color: $primary-color-inverse;
             background-color: $secondary-color;
             max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             transition: $transition-time;            
         }
 
