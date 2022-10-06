@@ -1,2 +1,2 @@
 # My Personal Portfolio
-Link: https://lijo-belardi.github.io/
+Link: [personal-portfolio](https://lijo-belardi-personal-portfolio.netlify.app/)
