@@ -545,7 +545,7 @@ b {
 
   /* -- Portfolio */
   .card {
-    height: 34.375rem;
+    height: 36rem;
     position: relative;
   }
   .card .btn-primary {
@@ -610,6 +610,12 @@ b {
   .skill {
     margin: 5rem auto;
     min-height: 40vh;
+  }
+
+  /* -- Portfolio */
+  .card {
+    height: 39rem;
+    position: relative;
   }
 
   /*-- Contact --*/
